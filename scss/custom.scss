@@ -1,0 +1,72 @@
+/*vlastni styly*/
+html {
+    scroll-behavior: smooth; /*nova vlastnost, pozvolny scroll... zjistit kompatibilitu na caniuse.com*/
+}
+body {
+    font-family: "Raleway", sans-serif;
+}
+.navbar {
+    font-weight: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    .navbar-brand {
+        font-weight: 100;
+    }
+    .nav-item {
+        font-size: 1.4rem;
+    }
+    .nav-link:hover {
+        border-bottom: 1px solid white;
+    }
+}
+#showcase {
+    background: url(../images/main.jpeg) bottom center / cover no-repeat;
+    min-height: 750px;
+    position: relative;
+    
+    h1 {
+        font-family: "Questrial", sans-serif;
+        line-height: 1;
+    }
+    #book {
+        font-size: 1.5rem;
+        border-radius: 2rem;
+    }
+    #overlay {
+        background: rgba(0,0,0,.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    #header {
+        z-index: 2;
+    }  
+}
+#quotes {
+    i {
+        opacity: .4;
+    }
+}
+#footer {
+    font-weight: 100;
+}
+@media (max-width: 768px) {
+    .navbar {
+        background: #1f1f1f;
+        .nav-link:hover {
+            border: none;
+        }
+    }
+    #showcase {
+        min-height: 500px;
+        h1 {
+            font-size: 4rem;
+        }
+    }
+} 
